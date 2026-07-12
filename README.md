@@ -1,31 +1,34 @@
-# Skeletix Backend API
+<p align="center">
+  <img src="banner.jpeg" alt="Skeletix Banner" width="100%">
+</p>
 
-![Skeletix Banner](banner.jpeg)
+# Skeletix Backend API
 
 ## AI-Powered Bone Fracture Detection System Backend
 
-Skeletix Backend is a production-style RESTful API developed using **ASP.NET Core Web API** as part of the graduation project at **The Egyptian E-Learning University (EELU)**.
+Skeletix Backend is a production-style RESTful API developed using **ASP.NET Core Web API** as part of the Graduation Project at **The Egyptian E-Learning University (EELU)**.
 
-The backend provides secure and scalable services for an AI-powered healthcare platform that assists medical professionals in analyzing X-ray images, detecting bone fractures, generating reports, and managing patient medical data.
+The backend provides secure, scalable, and maintainable services for an AI-powered healthcare platform that assists medical professionals in analyzing X-ray images, detecting bone fractures, generating reports, and managing patient medical data.
 
 ---
 
 # Overview
 
-Skeletix is an intelligent healthcare system that combines **Artificial Intelligence and Backend Engineering** to support faster and more accurate bone fracture analysis.
+Skeletix is an intelligent healthcare system that combines **Artificial Intelligence** with **Backend Engineering** to support faster and more accurate bone fracture analysis.
 
-The backend acts as the core system responsible for:
+The backend is responsible for:
 
-* User authentication and authorization.
-* Patient and medical file management.
-* X-ray image upload and processing.
-* AI model integration for fracture detection.
-* Analysis result management.
-* Report generation.
-* Dashboard statistics.
-* Secure communication with the frontend application.
+- User Authentication & Authorization
+- Patient Management
+- Medical File Management
+- X-ray Image Upload
+- AI Model Integration
+- Fracture Detection Results
+- Medical Report Generation
+- Dashboard Statistics
+- Secure Communication with Frontend
 
-The system follows a clean and scalable architecture designed for real-world healthcare applications.
+The project follows a clean, scalable, and production-style architecture suitable for real-world healthcare applications.
 
 ---
 
@@ -33,81 +36,77 @@ The system follows a clean and scalable architecture designed for real-world hea
 
 ## Authentication & Security
 
-* JWT Authentication.
-* User Registration and Login.
-* Role-Based Authorization.
-* Secure API endpoints.
-* Password hashing and identity management.
+- JWT Authentication
+- User Registration & Login
+- Role-Based Authorization
+- Secure API Endpoints
+- ASP.NET Identity
+- Password Hashing
 
 ## Medical File Management
 
-* Upload X-ray images.
-* Store patient medical files.
-* Manage analysis history.
-* Track medical examination records.
+- Upload X-ray Images
+- Store Patient Medical Files
+- Analysis History
+- Medical Examination Records
 
-## AI Fracture Analysis Integration
+## AI Fracture Analysis
 
-The backend integrates with an Artificial Intelligence model to analyze X-ray images.
+The backend integrates with an Artificial Intelligence model capable of:
 
-The AI service provides:
+- Detecting Bone Fractures
+- Returning Confidence Scores
+- Generating Detection Results
+- Providing Medical Recommendations
+- Returning Processed X-ray Images
 
-* Bone fracture detection.
-* Confidence score estimation.
-* Detection results.
-* Medical recommendations.
-* Analysis output images.
-
-The backend manages the complete workflow between users, AI services, database, and frontend applications.
+The backend manages the complete communication between users, the AI service, SQL Server database, and the frontend application.
 
 ## Reports & Dashboard
 
-* Generate medical analysis reports.
-* Store analysis results.
-* Provide dashboard statistics.
-* Monitor system activities.
+- Medical Analysis Reports
+- Dashboard Statistics
+- Analysis History
+- System Monitoring
 
 ## API Documentation
 
-* Interactive Swagger/OpenAPI documentation.
-* Easy API testing and exploration.
+- Interactive Swagger UI
+- OpenAPI Documentation
+- Easy API Testing
 
 ---
 
 # System Architecture
-
-The project follows a layered architecture:
 
 ```
 Skeletix Backend
 
 │
 ├── Controllers
-│   └── Handle HTTP requests and API endpoints
+│   └── API Endpoints
 │
 ├── Contracts
-│   └── Interfaces and service contracts
+│   └── Interfaces
 │
 ├── Entities
-│   └── Database models
+│   └── Database Models
 │
 ├── Services
-│   └── Business logic implementation
+│   └── Business Logic
 │
 ├── Persistence
-│   └── Database context and configurations
+│   └── Database Context
 │
 ├── Migrations
-│   └── Entity Framework Core migrations
+│   └── Entity Framework Core Migrations
 │
 ├── Uploads
-│   └── Uploaded medical images
+│   └── Uploaded X-ray Images
 │
 ├── Program.cs
-│   └── Application configuration and dependency injection
 │
 └── appsettings.json
-    └── Application settings
 ```
 
 ---
@@ -116,26 +115,27 @@ Skeletix Backend
 
 ## Backend
 
-* ASP.NET Core Web API
-* C#
-* Entity Framework Core
-* SQL Server
-* LINQ
-* Dependency Injection
-* JWT Authentication
-* RESTful APIs
+- ASP.NET Core Web API
+- C#
+- Entity Framework Core
+- SQL Server
+- LINQ
+- Dependency Injection
+- JWT Authentication
+- RESTful APIs
 
 ## AI Integration
 
-* AI Fracture Detection Model
-* REST API Communication
-* Image Processing Workflow
+- AI Fracture Detection Model
+- REST API Communication
+- Image Processing Workflow
 
-## Documentation & Tools
+## Development Tools
 
-* Swagger / OpenAPI
-* Visual Studio 2022
-* Git & GitHub
+- Visual Studio 2022
+- Git
+- GitHub
+- Swagger / OpenAPI
 
 ---
 
@@ -143,25 +143,27 @@ Skeletix Backend
 
 The project uses:
 
-* SQL Server
-* Entity Framework Core
-* Code First Approach
-* Database Migrations
+- SQL Server
+- Entity Framework Core
+- Code First Approach
+- EF Core Migrations
 
-Main responsibilities:
+Responsibilities include:
 
-* Store users data.
-* Manage medical files.
-* Store AI analysis results.
-* Maintain system records.
+- User Data
+- Patient Records
+- Medical Files
+- AI Analysis Results
+- Reports
+- System Records
 
 ---
 
 # Authentication
 
-Skeletix uses JWT Bearer Authentication.
+The API uses **JWT Bearer Authentication**.
 
-For protected endpoints, include the generated token in the request header:
+Include the generated access token inside the request header.
 
 ```http
 Authorization: Bearer YOUR_TOKEN
@@ -171,9 +173,7 @@ Authorization: Bearer YOUR_TOKEN
 
 # API Documentation
 
-The project provides interactive API documentation using Swagger/OpenAPI.
-
-Run the application and open:
+After running the project, open:
 
 ```text
 /swagger
@@ -185,39 +185,55 @@ Example:
 https://localhost:7045/swagger
 ```
 
-## Swagger Screenshots
+---
 
-### Authentication APIs
+# Swagger Screenshots
+
+## Authentication APIs
 
 ![Authentication](1.png)
 
-### Medical Files APIs
+---
+
+## Medical Files APIs
 
 ![Medical Files](2.png)
 
-### AI Analysis APIs
+---
+
+## AI Analysis APIs
 
 ![AI Analysis](3.png)
 
-### Reports APIs
+---
+
+## Reports APIs
 
 ![Reports](4.png)
 
-### Reports APIs
+---
+
+## Dashboard APIs
 
 ![Dashboard](5.png)
 
-### Dashboard APIs
+---
 
-![Responses](6.png)
+## Education APIs
 
-### Education
+![Education](6.png)
 
-![Authorization](7.png)
+---
 
-### Chatbot
+## Chatbot APIs
 
-![Swagger Overview](8.png)
+![Chatbot](7.png)
+
+---
+
+## Additional APIs
+
+![Additional APIs](8.png)
 
 ---
 
@@ -235,7 +251,7 @@ git clone https://github.com/a7medyasser-tech/Skeletix-Backend.git
 cd Skeletix-Backend
 ```
 
-## Restore Dependencies
+## Restore Packages
 
 ```bash
 dotnet restore
@@ -249,13 +265,13 @@ Update the SQL Server connection string inside:
 appsettings.json
 ```
 
-Then apply migrations:
+Then run:
 
 ```bash
 dotnet ef database update
 ```
 
-## Run Application
+## Run the Application
 
 ```bash
 dotnet run
@@ -267,38 +283,34 @@ dotnet run
 
 ## Skeletix – AI Bone Fracture Detection System
 
-This backend was developed as part of the graduation project at:
+This backend was developed as part of the Graduation Project at **The Egyptian E-Learning University (EELU)**.
 
-**The Egyptian E-Learning University (EELU)**
+The system leverages Artificial Intelligence to:
 
-Skeletix is an AI-powered healthcare platform designed to assist healthcare professionals in detecting bone fractures from X-ray images.
-
-The system uses Artificial Intelligence to:
-
-* Analyze medical X-ray images.
-* Detect possible fractures.
-* Estimate confidence levels.
-* Provide recommendations.
-* Generate structured medical reports.
+- Analyze X-ray Images
+- Detect Bone Fractures
+- Estimate Confidence Levels
+- Generate Medical Recommendations
+- Produce Structured Medical Reports
 
 The backend is responsible for:
 
-* API development.
-* Database management.
-* Authentication.
-* AI model integration.
-* Report generation.
-* Secure communication between system components.
+- REST API Development
+- Authentication
+- Database Management
+- AI Integration
+- Report Generation
+- Secure Communication Between System Components
 
 ---
 
 # Future Improvements
 
-* Cloud deployment.
-* Advanced medical analytics.
-* Real-time notifications.
-* Mobile application integration.
-* Enhanced AI prediction models.
+- Cloud Deployment
+- Advanced Medical Analytics
+- Real-time Notifications
+- Mobile Application Integration
+- Enhanced AI Prediction Models
 
 ---
 
@@ -306,19 +318,23 @@ The backend is responsible for:
 
 ## Ahmed Yasser
 
-Backend Developer specialized in:
+**Junior Backend Developer | .NET**
 
-* ASP.NET Core Web API
-* C#
-* Entity Framework Core
-* SQL Server
-* Backend System Development
+Specialized in:
 
-GitHub:
+- ASP.NET Core Web API
+- C#
+- Entity Framework Core
+- SQL Server
+- RESTful APIs
+- JWT Authentication
+- Clean Architecture
+
+**GitHub**
 
 https://github.com/a7medyasser-tech
 
-LinkedIn:
+**LinkedIn**
 
 https://www.linkedin.com/in/ahmed-0-yasser
 
@@ -326,4 +342,8 @@ https://www.linkedin.com/in/ahmed-0-yasser
 
 # License
 
-This project was developed for educational and graduation project purposes.
+This project was developed as a Graduation Project for educational purposes. It demonstrates backend development, RESTful API design, AI integration, and software engineering best practices.
+
+---
+
+⭐ If you found this project useful, consider giving it a Star on GitHub.
