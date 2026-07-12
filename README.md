@@ -199,7 +199,7 @@ https://localhost:7045/swagger
 
 ![AI Analysis](3.png)
 
-### 
+### Reports APIs
 
 ![Reports](4.png)
 
@@ -211,7 +211,7 @@ https://localhost:7045/swagger
 
 ![Responses](6.png)
 
-### Home
+### Education
 
 ![Authorization](7.png)
 
